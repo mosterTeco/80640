@@ -1,5 +1,5 @@
 import {y} from "./y.js"
 export function x(params){
-    y("X")
+    y("XX")
     return ("" + params)
 }
