@@ -10,7 +10,8 @@ function Formulario(props) {
 
     const hacerPeticion = async () => {
         try{
-            const res = await axios.get('http://localhost:4567/r4')
+            //const res = await axios.post('http://localhost:4567/r2', datosFormulario)
+            const res = await axios.get('http://localhost:4567/r2', {params: datosFormulario})
             console.log(res.data)
             return res.data //data es un objeto
         }catch (error){
